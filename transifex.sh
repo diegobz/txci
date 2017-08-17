@@ -4,9 +4,9 @@
 # relies on $TXUSER and $TXPASSWD being set as env
 # vars.
 
-# only run once, and only on master
+# only run once, and only on devel
 echo $TRAVIS_JOB_NUMBER | grep "\.1$"
-if [ $? -eq 0 ] && [ $TRAVIS_BRANCH == master ]
+if [ $? -eq 0 ] && [ $TRAVIS_BRANCH == devel ]
   then
     # make messages
     # write .transifexrc file

@@ -6,5 +6,8 @@ install:
 script:
   - echo "Run something"
 
-after_success:
-  - ./transifex.sh
+deploy:
+  provider: script
+  script: ./transifex.sh
+  on:
+    branch: devel
