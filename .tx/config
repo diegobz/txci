@@ -1,5 +1,6 @@
 [main]
 host = https://www.transifex.com
+lang_map = pt_BR: pt-br
 
 [txci.app]
 file_filter = locale/<lang>.po

@@ -7,7 +7,12 @@ script:
   - echo "Run something"
 
 deploy:
-  provider: script
-  script: ./transifex.sh
-  on:
-    branch: devel
+  - provider: script
+    script: ./txpush.sh
+    on:
+      branch: devel
+
+  - provider: script
+    script: ./txpull.sh
+    on:
+      tags: true
