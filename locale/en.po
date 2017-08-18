@@ -33,3 +33,7 @@ msgstr "This username is already taken."
 msgid "This username is not allowed."
 msgstr "This username is not allowed."
 
+#: app/index.py:73 app/forms.py:329
+#. Sign up button for users to register in the webapp.
+msgid "Sign in"
+msgstr "Sign in"
