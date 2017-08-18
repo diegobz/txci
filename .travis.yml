@@ -1,5 +1,11 @@
 language: python
 
+env:
+  global:
+    - TX_BRANCH="devel"
+    - TX_TAG="txpull"
+    - TX_COMMIT_TRANSLATIONS=true
+
 install:
   - pip install transifex-client
 
@@ -7,12 +13,16 @@ script:
   - echo "Run something"
 
 deploy:
+  # Push source file for translations on builds on $TX_BRANCH
   - provider: script
-    script: ./txpush.sh
+    script: ./tx.sh push
     on:
-      branch: devel
+      branch: $TX_BRANCH
 
+  # Pull translation files on builds started from a git tag called $TX_TAG
+  # It may also commit and push the changes back to Github if the env var
+  # $TX_COMMIT_TRANSLATIONS is set to true.
   - provider: script
-    script: ./txpull.sh
+    script: ./tx.sh pull
     on:
       tags: true
