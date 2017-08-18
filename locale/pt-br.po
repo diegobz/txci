@@ -1,0 +1,42 @@
+# Translation file for Transifex.
+# Copyright (C) 2007-2010 Transifex Ltd.
+# 
+# Translators:
+# Diego Búrigo Zacarão <diegobz@transifex.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: txci\n"
+"POT-Creation-Date: 2015-02-17 20:10+0000\n"
+"Last-Translator: Diego Búrigo Zacarão <diegobz@transifex.com>, 2017\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/txci/teams/39088/pt_BR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Sign up button for users to register in the webapp.
+#: app/index.py:73 app/forms.py:329
+msgid "Sign up"
+msgstr "Registrar"
+
+#: accounts/forms.py:334
+msgid "Email"
+msgstr "E-mail"
+
+#: app/forms.py:333
+msgid "Password"
+msgstr "Senha"
+
+#: app/forms.py:348
+msgid "This username is already taken."
+msgstr "Este nome de usuário já está em uso."
+
+#: app/forms.py:351
+msgid "This username is not allowed."
+msgstr "Este nome de usuário não é permitido."
+
+#. Sign up button for users to register in the webapp.
+#: app/index.py:73 app/forms.py:329
+msgid "Sign in"
+msgstr "Login"
