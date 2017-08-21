@@ -75,3 +75,32 @@ setup relies on git tagging system and basically listens to a tag called
 `txpull`, which will trigger a fresh pull of translation files from Transifex
 and commit any changes to the repository automatically. The setup emulates
 the behavior applied for a deployment process triggered by git tags.
+
+
+## Files in this repo
+
+There are a few files in this repo that are required for it to work. Below you can find a bit more details about them.
+
+```
+locale/*.po
+
+  This is where source content and translations files are stored in the repo.
+
+.tx/config
+
+  Configuration file used by transifex-client CLI tool for mapping files under
+  `locale/` with a project in Transifex. Some more info can be found at
+  https://docs.transifex.com/client/client-configuration#-tx/config
+
+.travis.yml
+
+  Travis CI configuration with support for running transifex-client CLI tool for
+  push source content whenever `devel` changes and pulling translations files
+  whenever a `txpull` tag is pushed.
+
+tx.sh
+
+  Helper script with checks and actions that can be taken based on environment
+  variables and arguments passed to it.
+
+```
