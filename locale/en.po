@@ -17,6 +17,10 @@ msgstr ""
 msgid "Sign up"
 msgstr "Sign up"
 
+#: accounts/forms.py:332
+msgid "Username"
+msgstr "Username"
+
 #: accounts/forms.py:334
 msgid "Email"
 msgstr "Email"
