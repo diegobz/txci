@@ -2,7 +2,7 @@
 host = https://www.transifex.com
 lang_map = pt_BR: pt-br
 
-[txci.app]
+[travis-ci-example.main-app]
 file_filter = locale/<lang>.po
 source_file = locale/en.po
 source_lang = en
